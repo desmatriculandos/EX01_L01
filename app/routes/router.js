@@ -7,9 +7,9 @@ router.get("/", function (req, res) {
 });
 
 router.post("/index",
-    body("nome").isLength({ min: 3, max: 30}).withMessage("O nome deve ter de 3 a 30 caracteres caracteres"),
+    body("nome").isLength({ min: 3, max: 30}).withMessage("O nome deve ter de 3 a 30 caracteres caracteres").matches(/^[a-zA-Z\s]+$/).withMessage("O nome deve conter apenas letras e espaços"),
     body("email").isEmail().withMessage("insira um email válido"),
-    body("cpf").isLength({ min: 11, max: 14}),
+    body("cpf").isLength({ min: 11, max: 14}).withMessage("O CPF deve ter entre 11 e 14 caracteres"),
     function (req, res) {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {

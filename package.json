@@ -1,0 +1,26 @@
+{
+  "name": "ex01_l01",
+  "version": "1.0.0",
+  "description": "Template para futuros projetos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desmatriculandos/EX01_L01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/desmatriculandos/EX01_L01/issues"
+  },
+  "homepage": "https://github.com/desmatriculandos/EX01_L01#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2"
+  }
+}
